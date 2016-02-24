@@ -2,10 +2,18 @@
 
 #messages
   =render @messages
-%hr
+%br
 %form
   %label Say Something
   %br
-  %input{type: 'text'}
-
+  .form-group
+    %input{type: 'text', class:'form-control'}
 %br
+
+%hr
+#container
+  %form
+    %input#address{:name => "address", :type => "text", :value => "658071"}/
+    %input{:name => "button", :type => "submit", :value => "Find"}/
+  %br
+  %textarea{:style => "width: 100%; height: 200px;"}
